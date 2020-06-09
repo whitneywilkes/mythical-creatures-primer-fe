@@ -11,6 +11,10 @@ class Yeti {
     console.log(`We'll have to outwit the ${name} with our superior intelligence.`)
   }
 
+  move_to_secret_location(locations){
+    locations[2].split("").reverse().join("")
+  }
+
   number_of_reindeer_eaten() {
     this.reindeers_eaten.count
   }
@@ -27,5 +31,6 @@ class Yeti {
 yeti = new Yeti("Bumble", "Colorado")
 yeti.number_of_reindeer_eaten()
 yeti.isHungry()
-yeti.run_away()
 yeti.bounce()
+yeti.move_to_secret_location(["California", "Oregon"])
+yeti.run_away()
