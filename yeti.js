@@ -12,7 +12,7 @@ class Yeti {
   }
 
   move_to_secret_location(locations){
-    locations[2].split("").reverse().join("")
+    this.home = locations[2].split("").reverse().join("")
   }
 
   number_of_reindeer_eaten() {
@@ -33,4 +33,5 @@ yeti.number_of_reindeer_eaten()
 yeti.isHungry()
 yeti.bounce()
 yeti.move_to_secret_location(["California", "Oregon"])
+this.home()
 yeti.run_away()
