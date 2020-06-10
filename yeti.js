@@ -16,15 +16,15 @@ class Yeti {
   }
 
   number_of_reindeer_eaten() {
-    this.reindeers_eaten.count
+    this.reindeers_eaten
   }
 
-  isHungry {
+  isHungry() {
     if (this.weight > 300) {
       return false
     } else {
       return true
-
+    }
   }
 }
 
